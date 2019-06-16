@@ -1,1 +1,46 @@
 @import "~bootstrap/scss/bootstrap.scss";
+
+$accent-color: #0077ff;
+.header {
+  background-color: $accent-color;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+h2 {
+  color: $accent-color;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+// Only show the dotted divider on md+ viewports
+@media (min-width: 768px) {
+  .left-divider {
+    border-left: $accent-color dashed 1px;
+  }
+}
+
+// Print logic
+.only-print {
+  display: none;
+}
+
+.no-print {
+  display: unset;
+}
+
+@media print {
+  .only-print {
+    display: unset;
+  }
+  .no-print {
+    display: none;
+  }
+}
