@@ -3,10 +3,20 @@ import { StaticQuery, graphql } from "gatsby";
 
 const query = graphql`
   query {
-    markdownRemark(frontmatter: { type: { eq: "experience" } }) {
-      html
-      frontmatter {
-        title
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___startDate] }
+      filter: { frontmatter: { type: { eq: "experience" } } }
+    ) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            title
+            startDate(formatString: "MMMM YYYY")
+            endDate(formatString: "MMMM YYYY")
+          }
+        }
       }
     }
   }
@@ -20,9 +30,16 @@ const Experience = () => (
       return (
         <Fragment>
           <h2>Experience</h2>
-          <h3 className="mb-0">{data.markdownRemark.frontmatter.title}</h3>
-          <span className="text-muted">January 2019 - February 2019</span>
-          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <Fragment key={node.id}>
+              <h3 className="mb-0">{node.frontmatter.title}</h3>
+              <span className="text-muted">
+                {node.frontmatter.startDate} -{" "}
+                {node.frontmatter.endDate || "Now"}
+              </span>
+              <div dangerouslySetInnerHTML={{ __html: node.html }} />
+            </Fragment>
+          ))}
         </Fragment>
       );
     }}

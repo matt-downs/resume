@@ -92,47 +92,6 @@ export default class extends React.Component<IndexPageProps, {}> {
 
               <Experience />
 
-              <h2>Experience</h2>
-
-              <h3 className="mb-0">
-                Neto E-Commerce — React Developer (Secondment)
-              </h3>
-              <span className="text-muted">January 2019 - February 2019</span>
-              <p>
-                During my time in this role, I worked in a small development
-                team with a focus on React but also touching some PHP and Perl
-                projects. I worked closely with the team's product owner to
-                refine and deliver new features to an existing project, as well
-                as resolve a number of existing bugs. This secondment was a very
-                positive experience for both myself and the team I worked with -
-                I learnt so much about collaboration, peer reviewing, best
-                practices, and the overall agile development cycle.
-              </p>
-
-              <h3 className="mb-0">
-                Neto E-Commerce — Technical Design Support
-              </h3>
-              <span className="text-muted">May 2017 - Now</span>
-              <p>
-                At a high level, my role focuses on providing front end web
-                development support to both clients and partner companies,
-                specifically relating to Neto’s proprietary B@SE templating
-                language and system configuration. I am also required to manage
-                client expectations when it comes to new software releases, and
-                work closely with the platform engineers and software developers
-                to ensure that the system is working reliabily for all clients.
-              </p>
-
-              <h3 className="mb-0">Dick Smith, Mitchelton — Shift Manager</h3>
-              <span className="text-muted">November 2011 - April 2016</span>
-              <p>
-                Beginning as a casual salesperson and finishing as an
-                experienced shift manager, my employment in the retail sector of
-                Dick Smith has provided me with valuable experience in customer
-                interaction, role delegation, problem solving and conflict
-                resolution.
-              </p>
-
               <h2>Education</h2>
               <h3 className="mb-0">Bachelor of Information Technology</h3>
               <span className="text-muted">
