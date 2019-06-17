@@ -1,6 +1,6 @@
 ---
-type: "project"
-title: "Finance thingy (working title)"
+type: project
+title: QUT Linker — Google Chrome Extension
 technologies:
   - vue
   - jquery
