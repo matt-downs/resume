@@ -23,10 +23,29 @@ const query = graphql`
   }
 `;
 
-const Experience = () => (
+type Data = {
+  allMarkdownRemark: {
+    edges: [
+      {
+        node: {
+          id: string;
+          html: string;
+          frontmatter: {
+            title: string;
+            technologies: [string];
+            projectUrl: string;
+            sourceUrl: string;
+          };
+        };
+      }
+    ];
+  };
+};
+
+const Projects = () => (
   <StaticQuery
     query={query}
-    render={data => {
+    render={(data: Data) => {
       console.log(data);
       return (
         <Fragment>
@@ -48,6 +67,7 @@ const Experience = () => (
                       <a href={node.frontmatter.projectUrl} target="_blank">
                         <span className="no-print">Check out the project</span>
                         <span className="only-print">
+                          {/* TODO */}
                           npmjs.com/package/neto-api
                         </span>
                       </a>
@@ -58,6 +78,7 @@ const Experience = () => (
                       <a href={node.frontmatter.sourceUrl} target="_blank">
                         <span className="no-print">Check out the source</span>
                         <span className="only-print">
+                          {/* TODO */}
                           github.com/matt-downs/neto-api-node
                         </span>
                       </a>
@@ -74,4 +95,4 @@ const Experience = () => (
   />
 );
 
-export default Experience;
+export default Projects;

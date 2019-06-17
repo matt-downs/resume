@@ -22,10 +22,28 @@ const query = graphql`
   }
 `;
 
+type Data = {
+  allMarkdownRemark: {
+    edges: [
+      {
+        node: {
+          id: string;
+          html: string;
+          frontmatter: {
+            title: string;
+            startDate: string;
+            endDate: string;
+          };
+        };
+      }
+    ];
+  };
+};
+
 const Experience = () => (
   <StaticQuery
     query={query}
-    render={data => {
+    render={(data: Data) => {
       return (
         <Fragment>
           <h2>Experience</h2>
