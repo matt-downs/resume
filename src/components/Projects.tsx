@@ -55,7 +55,7 @@ const Projects = () => (
                 <h3 className="mb-0">{node.frontmatter.title}</h3>
                 <span className="text-muted">
                   {node.frontmatter.technologies.map(tech => (
-                    <span>#{tech} </span>
+                    <span key={tech}>#{tech} </span>
                   ))}
                 </span>
               </div>
