@@ -43,23 +43,20 @@ type Data = {
 const Experience = () => (
   <StaticQuery
     query={query}
-    render={(data: Data) => {
-      return (
-        <Fragment>
-          <h2>Experience</h2>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Fragment key={node.id}>
-              <h3 className="mb-0">{node.frontmatter.title}</h3>
-              <span className="text-muted">
-                {node.frontmatter.startDate} -{" "}
-                {node.frontmatter.endDate || "Now"}
-              </span>
-              <div dangerouslySetInnerHTML={{ __html: node.html }} />
-            </Fragment>
-          ))}
-        </Fragment>
-      );
-    }}
+    render={(data: Data) => (
+      <Fragment>
+        <h2>Experience</h2>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <Fragment key={node.id}>
+            <h3 className="mb-0">{node.frontmatter.title}</h3>
+            <span className="text-muted">
+              {node.frontmatter.startDate} - {node.frontmatter.endDate || "Now"}
+            </span>
+            <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          </Fragment>
+        ))}
+      </Fragment>
+    )}
   />
 );
 
