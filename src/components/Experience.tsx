@@ -25,8 +25,7 @@ const query = graphql`
 const Experience = () => (
   <StaticQuery
     query={query}
-    render={(data: any) => {
-      console.log(data);
+    render={data => {
       return (
         <Fragment>
           <h2>Experience</h2>
