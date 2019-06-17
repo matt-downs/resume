@@ -1,7 +1,6 @@
 ---
-type: "experience"
-title: "Neto E-Commerce — Technical Design Support"
-dateRange: "May 2017 - Now"
+type: experience
+title: Neto E-Commerce — Technical Design Support
 startDate: 2017-05-01
 endDate:
 ---

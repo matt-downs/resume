@@ -1,7 +1,6 @@
 ---
-type: "experience"
-title: "Neto E-Commerce — React Developer (Secondment)"
-dateRange: "January 2019 - February 2019"
+type: experience
+title: Neto E-Commerce — React Developer (Secondment)
 startDate: 2019-01-01
 endDate: 2019-02-01
 ---

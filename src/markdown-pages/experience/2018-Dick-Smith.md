@@ -1,7 +1,6 @@
 ---
-type: "experience"
-title: "Dick Smith, Mitchelton — Shift Manager"
-dateRange: "November 2011 - April 2016"
+type: experience
+title: Dick Smith, Mitchelton — Shift Manager
 startDate: 2011-11-01
 endDate: 2016-04-01
 ---

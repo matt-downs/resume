@@ -1,6 +1,6 @@
 ---
-type: "project"
-title: "Finance thingy (working title)"
+type: project
+title: Finance thingy (working title)
 technologies:
   - react
   - apollo
