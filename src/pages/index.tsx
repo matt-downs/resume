@@ -122,9 +122,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                 <li>Coffee</li>
                 <li>Running and fitness</li>
                 <li>Photography</li>
-                <li>
-                  Burgers, <span id="pizza">pizza</span> and beer
-                </li>
+                <li>Burgers, pizza and beer</li>
                 <li>Dogs</li>
               </ul>
 
@@ -197,13 +195,3 @@ export default class extends React.Component<IndexPageProps, {}> {
     );
   }
 }
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
