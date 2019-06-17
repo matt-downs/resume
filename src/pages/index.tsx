@@ -2,6 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import "../styles/index.scss";
 
+import Experience from "../components/Experience";
+
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
 interface IndexPageProps {
@@ -87,6 +89,8 @@ export default class extends React.Component<IndexPageProps, {}> {
                 with. I crave a good challenge, and I am always striving to
                 expand my knowledge and techniques for the future.
               </p>
+
+              <Experience />
 
               <h2>Experience</h2>
 
