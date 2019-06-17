@@ -4,6 +4,7 @@ import "../styles/index.scss";
 
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+import Sidebar from "../components/Sidebar";
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -110,84 +111,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             </div>
 
             <div className="col-md-4 pt-4 left-divider">
-              <h2>Info</h2>
-              <p>
-                Brisbane, QLD 4060
-                <br />
-                <a href="mailto:mattdowns6@gmail.com">mattdowns6@gmail.com</a>
-              </p>
-
-              <h2>Hobbies</h2>
-              <ul>
-                <li>Coffee</li>
-                <li>Running and fitness</li>
-                <li>Photography</li>
-                <li>Burgers, pizza and beer</li>
-                <li>Dogs</li>
-              </ul>
-
-              <h2>Skills</h2>
-              <ul>
-                <li>Critical thinking</li>
-                <li>Collaboration</li>
-                <li>Design and creativity</li>
-                <li>Attention to detail</li>
-              </ul>
-
-              <h2>Platform experience</h2>
-              <ul>
-                <li>
-                  AWS (Lambda, API Gateway, DynamoDB, S3, Elastic Beanstalk,
-                  EC2)
-                </li>
-                <li>Neto</li>
-              </ul>
-
-              <h2>Tooling experience</h2>
-              <ul>
-                <li>Git and Git Flow</li>
-                <li>Bash</li>
-                <li>Atlassian products: JIRA, Confluence</li>
-                <li>Various debugging tools</li>
-              </ul>
-
-              <h2>Framework experience</h2>
-              <ul>
-                <li>React, Redux &amp; Apollo</li>
-                <li>Angular &amp; Ionic</li>
-                <li>Bootstrap 3 &amp; 4</li>
-                <li>HAPI</li>
-                <li>Jest &amp; Mocha</li>
-              </ul>
-
-              <h2>Fluent in</h2>
-              <ul>
-                <li>TypeScript</li>
-                <li>JS (ES5 &amp; ES6) &amp; JSX</li>
-                <li>Node</li>
-                <li>B@SE (Neto templating)</li>
-                <li>CSS, SCSS &amp; SASS</li>
-                <li>HTML</li>
-              </ul>
-
-              <h2>Convention experience</h2>
-              <ul>
-                <li>MVC and other modular design patterns</li>
-                <li>Object-oriented &amp; Functional programming</li>
-                <li>Reactive programming</li>
-                <li>Parallel computing</li>
-                <li>GraphQL &amp; REST</li>
-                <li>Stateless server architecture for scalability</li>
-                <li>SQL &amp; NoSQL</li>
-                <li>Test-driven development</li>
-              </ul>
-
-              <h2>Topics interested in</h2>
-              <ul>
-                <li>Microservices!</li>
-                <li>Universal &amp; progressive single page web apps!</li>
-                <li>Basically anything involving the web at scale</li>
-              </ul>
+              <Sidebar />
             </div>
           </div>
         </div>
