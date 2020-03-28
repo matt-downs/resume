@@ -41,19 +41,23 @@ type Data = {
 const Sidebar = () => {
   const data: Data = useStaticQuery(query);
 
-  return data.allMarkdownRemark.edges.map(({ node }) => (
-    <div key={node.id}>
-      <h2>{node.frontmatter.title}</h2>
-      {node.frontmatter.bullets && (
-        <ul>
-          {node.frontmatter.bullets.map(bullet => (
-            <li key={bullet}>{bullet}</li>
-          ))}
-        </ul>
-      )}
-      <div dangerouslySetInnerHTML={{ __html: node.html }} />
-    </div>
-  ));
+  return (
+    <>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id}>
+          <h2>{node.frontmatter.title}</h2>
+          {node.frontmatter.bullets && (
+            <ul>
+              {node.frontmatter.bullets.map(bullet => (
+                <li key={bullet}>{bullet}</li>
+              ))}
+            </ul>
+          )}
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+        </div>
+      ))}
+    </>
+  );
 };
 
 export default Sidebar;
