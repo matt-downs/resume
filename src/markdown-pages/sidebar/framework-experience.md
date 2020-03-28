@@ -3,9 +3,8 @@ type: sidebar
 sort: 400
 title: Framework experience
 bullets:
-  - React, Redux & Apollo
+  - React, Redux & Apollo GraphQL
+  - Serverless
   - Angular & Ionic
-  - Bootstrap 3 & 4
-  - HAPI
-  - Jest & Mocha
+  - Bootstrap & Material UI
 ---

@@ -3,8 +3,10 @@ type: sidebar
 sort: 500
 title: Tooling experience
 bullets:
-  - Git and Git Flow
+  - Git & SVN
   - Bash
-  - "Atlassian products: JIRA, Confluence"
-  - Various debugging tools
+  - Cypress & Jest
+  - Terraform
+  - JIRA & Confluence
+  - Buildkite & Jenkins
 ---
