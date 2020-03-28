@@ -31,9 +31,8 @@ export default class extends React.Component<IndexPageProps, {}> {
               <h1 className="col-12 display-3">// Matt Downs</h1>
               <div className="col-md-8">
                 <p className="lead mb-0">
-                  A fast learner with extensive personal experience creating
-                  snappy modern web applications through modular and well
-                  documented code.
+                  A full stack web developer with a passion for modern
+                  technologies and great end user experience.
                 </p>
                 <div className="only-print">
                   <p className="small mt-3 mb-0">
@@ -82,14 +81,14 @@ export default class extends React.Component<IndexPageProps, {}> {
             <div className="col-md-8 pt-4">
               <h2>About me</h2>
               <p>
-                I am an aspiring software developer seeking further experience
-                in the professional field. I am a fast learner who is not
-                affraid to jump straight into a project. I have a keen interest
-                in modern web technologies, especially web apps that can deliver
-                the features and rich experience of a native-like application. I
-                work well in a team, and enjoy connecting with the people I work
-                with. I crave a good challenge, and I am always striving to
-                expand my knowledge and techniques for the future.
+                I am a full stack web developer with a focus on creating the
+                best solution possible for the end user. I have a keen interest
+                in using modern web technologies to create web applications that
+                deliver a rich and fluid experience. I am a fast learner who is
+                not afraid to jump straight into a project. I work well in a
+                team, and enjoy connecting with the people I work with. I crave
+                a good challenge, and I am always striving to expand my
+                knowledge and techniques for the future.
               </p>
 
               <Experience />
