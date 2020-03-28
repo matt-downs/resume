@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { StaticQuery, graphql } from "gatsby";
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 const query = graphql`
   query {
@@ -38,25 +38,22 @@ type Data = {
   };
 };
 
-const Sidebar = () => (
-  <StaticQuery
-    query={query}
-    render={(data: Data) =>
-      data.allMarkdownRemark.edges.map(({ node }) => (
-        <Fragment key={node.id}>
-          <h2>{node.frontmatter.title}</h2>
-          {node.frontmatter.bullets && (
-            <ul>
-              {node.frontmatter.bullets.map(bullet => (
-                <li key={bullet}>{bullet}</li>
-              ))}
-            </ul>
-          )}
-          <div dangerouslySetInnerHTML={{ __html: node.html }} />
-        </Fragment>
-      ))
-    }
-  />
-);
+const Sidebar = () => {
+  const data: Data = useStaticQuery(query);
+
+  return data.allMarkdownRemark.edges.map(({ node }) => (
+    <div key={node.id}>
+      <h2>{node.frontmatter.title}</h2>
+      {node.frontmatter.bullets && (
+        <ul>
+          {node.frontmatter.bullets.map(bullet => (
+            <li key={bullet}>{bullet}</li>
+          ))}
+        </ul>
+      )}
+      <div dangerouslySetInnerHTML={{ __html: node.html }} />
+    </div>
+  ));
+};
 
 export default Sidebar;

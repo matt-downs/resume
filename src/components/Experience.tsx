@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { StaticQuery, graphql } from "gatsby";
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 const query = graphql`
   query {
@@ -40,24 +40,23 @@ type Data = {
   };
 };
 
-const Experience = () => (
-  <StaticQuery
-    query={query}
-    render={(data: Data) => (
-      <Fragment>
-        <h2>Experience</h2>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Fragment key={node.id}>
-            <h3 className="mb-0">{node.frontmatter.title}</h3>
-            <span className="text-muted">
-              {node.frontmatter.startDate} - {node.frontmatter.endDate || "Now"}
-            </span>
-            <div dangerouslySetInnerHTML={{ __html: node.html }} />
-          </Fragment>
-        ))}
-      </Fragment>
-    )}
-  />
-);
+const Experience = () => {
+  const data: Data = useStaticQuery(query);
+
+  return (
+    <>
+      <h2>Experience</h2>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id}>
+          <h3 className="mb-0">{node.frontmatter.title}</h3>
+          <span className="text-muted">
+            {node.frontmatter.startDate} - {node.frontmatter.endDate || "Now"}
+          </span>
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+        </div>
+      ))}
+    </>
+  );
+};
 
 export default Experience;
