@@ -65,7 +65,6 @@ const Projects = () => (
                     <a href={node.frontmatter.projectUrl} target="_blank">
                       <span className="no-print">Check out the project</span>
                       <span className="only-print">
-                        {/* TODO */}
                         npmjs.com/package/neto-api
                       </span>
                     </a>
@@ -76,7 +75,6 @@ const Projects = () => (
                     <a href={node.frontmatter.sourceUrl} target="_blank">
                       <span className="no-print">Check out the source</span>
                       <span className="only-print">
-                        {/* TODO */}
                         github.com/matt-downs/neto-api-node
                       </span>
                     </a>
