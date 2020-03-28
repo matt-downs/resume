@@ -32,14 +32,12 @@ const Index = () => (
           <ul className="col-md-4 mb-0 list-unstyled">
             <li>
               <a href="https://github.com/matt-downs" target="_blank">
-                <i className="fab fa-fw fa-github"></i>
                 <span className="no-print">GitHub</span>
                 <span className="only-print">github.com/matt-downs</span>
               </a>
             </li>
             <li>
               <a href="https://www.npmjs.com/~matt-downs" target="_blank">
-                <i className="fab fa-fw fa-npm"></i>
                 <span className="no-print">NPM</span>
                 <span className="only-print">npmjs.com/~matt-downs</span>
               </a>
@@ -49,7 +47,6 @@ const Index = () => (
                 href="https://www.linkedin.com/in/hiremattdowns"
                 target="_blank"
               >
-                <i className="fab fa-fw fa-linkedin"></i>
                 <span className="no-print">LinkedIn</span>
                 <span className="only-print">
                   linkedin.com/in/hiremattdowns
