@@ -16,8 +16,8 @@ const Index = () => (
           <h1 className="col-12 display-3">// Matt Downs</h1>
           <div className="col-md-8">
             <p className="lead mb-0">
-              A full stack web developer with a passion for modern technologies
-              and great end user experience.
+              A full stack web developer with a passion for using modern
+              technologies to provide a great end user experience.
             </p>
             <div className="only-print">
               <p className="small mt-3 mb-0">
