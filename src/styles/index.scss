@@ -5,10 +5,19 @@ $accent-color: #0077ff;
   background-color: $accent-color;
   background-size: cover;
   background-position: center;
+  ::selection {
+    background-color: #fff;
+    color: $accent-color;
+  }
   color: #fff;
   a {
     color: #fff;
   }
+}
+
+::selection {
+  background-color: $accent-color;
+  color: #fff;
 }
 
 h2 {

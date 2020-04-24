@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Matt Downs: Full stack developer</title>
+        <title>Matt Downs // Full stack developer</title>
       </Helmet>
       <div className="header py-4">
         <div className="container">
