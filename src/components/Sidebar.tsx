@@ -48,7 +48,7 @@ const Sidebar = () => {
           <h2>{node.frontmatter.title}</h2>
           {node.frontmatter.bullets && (
             <ul>
-              {node.frontmatter.bullets.map(bullet => (
+              {node.frontmatter.bullets.map((bullet) => (
                 <li key={bullet}>{bullet}</li>
               ))}
             </ul>
