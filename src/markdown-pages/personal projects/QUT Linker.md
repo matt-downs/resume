@@ -1,6 +1,6 @@
 ---
 type: project
-title: QUT Linker — Google Chrome Extension
+title: QUT Linker Chrome extension
 technologies:
   - vue
   - jquery

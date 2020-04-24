@@ -1,6 +1,6 @@
 ---
 type: project
-title: neto-api — Node module
+title: neto-api npm module
 technologies:
   - npm
   - typescript
