@@ -54,8 +54,8 @@ const Projects = () => {
             <div className="col-md-8">
               <h3 className="mb-0">{node.frontmatter.title}</h3>
               <span className="text-muted">
-                {node.frontmatter.technologies.map(tech => (
-                  <span key={tech}>#{tech} </span>
+                {node.frontmatter.technologies.map((tech) => (
+                  <span key={tech}>{tech} </span>
                 ))}
               </span>
             </div>
@@ -64,9 +64,6 @@ const Projects = () => {
                 <li>
                   <a href={node.frontmatter.projectUrl} target="_blank">
                     <span className="no-print">Check out the project</span>
-                    <span className="only-print">
-                      npmjs.com/package/neto-api
-                    </span>
                   </a>
                 </li>
               )}
@@ -74,9 +71,6 @@ const Projects = () => {
                 <li>
                   <a href={node.frontmatter.sourceUrl} target="_blank">
                     <span className="no-print">Check out the source</span>
-                    <span className="only-print">
-                      github.com/matt-downs/neto-api-node
-                    </span>
                   </a>
                 </li>
               )}
