@@ -5,6 +5,7 @@ import "../styles/index.scss";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Sidebar from "../components/Sidebar";
+import Education from "../components/Education";
 
 const Index = () => {
   const currentDate = moment().format("MMMM Do YYYY");
@@ -78,17 +79,7 @@ const Index = () => {
 
             <Experience />
 
-            <h2>Education</h2>
-            <h3 className="mb-0">Bachelor of Information Technology</h3>
-            <span className="text-muted">
-              Queensland University of Technology, Brisbane City - Graduated mid
-              2017
-            </span>
-            <p>
-              Favourite units include “Software Development”, “Cloud Computing”,
-              “High Performance and Parallel Computing”, “Microprocessors and
-              Digital Systems” and “Mobile Application Development”.
-            </p>
+            <Education />
 
             <Projects />
           </div>
