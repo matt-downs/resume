@@ -21,7 +21,7 @@ const Index = () => {
             <div className="col-md-8">
               <p className="lead mb-0">
                 A full stack web developer with a passion for using modern
-                technologies to provide great end user experiences.
+                technologies to yield fantastic end user experiences.
               </p>
               <div className="only-print">
                 <p className="small mt-3 mb-0">
