@@ -26,8 +26,8 @@ const Index = () => {
               <div className="only-print">
                 <p className="small mt-3 mb-0">
                   Printed on {currentDate}, view the latest version at{" "}
-                  <a href="https://matt-downs.github.io" target="_blank">
-                    matt-downs.github.io
+                  <a href="https://matt-downs.netlify.app" target="_blank">
+                    matt-downs.netlify.app
                   </a>
                 </p>
               </div>
