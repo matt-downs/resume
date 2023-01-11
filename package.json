@@ -16,7 +16,7 @@
     "gatsby-plugin-typescript": "^2.4.4",
     "gatsby-remark-copy-linked-files": "^2.3.4",
     "gatsby-source-filesystem": "^2.3.10",
-    "gatsby-transformer-remark": "^2.8.14",
+    "gatsby-transformer-remark": "^5.25.1",
     "moment": "^2.26.0",
     "node-sass": "^4.14.1",
     "react-dom": "^16.13.1",
