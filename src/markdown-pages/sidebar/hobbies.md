@@ -4,8 +4,8 @@ sort: 800
 title: Hobbies
 bullets:
   - Coffee
-  - Running and fitness
-  - Photography
-  - Burgers, pizza and beer
-  - Dogs
+  - Parkrun and trail running
+  - Food (all kinds!)
+  - Dogs (all kinds!)
+  - Hands on DIY
 ---
