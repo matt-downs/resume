@@ -2,7 +2,7 @@
 type: experience
 title: Flight Centre — Full Stack Developer
 startDate: 2019-06-01
-endDate:
+endDate: 2021-08-01
 ---
 
-I am working in the Retail Solutions team to deliver software solutions that improve the interactions between travel consultants and retail customers. I work with a mix of modern and legacy technologies to both develop and manage several applications that are integral to Flight Centre's business across many countries. I help develop applications using cloud native architecture on AWS and as such have become familiar with many of the services available on this platform. Our modern stack allows us to build feature-rich, statically-hosted web applications using the React framework.
+As a Software Engineer in the Retail Solutions team at Flight Centre, I focused on enhancing user experiences by developing and maintaining applications that streamline interactions between travel consultants and our retail customers. My work involved a blend of modern and legacy technologies, spanning the development and management of critical applications used across multiple countries. I leveraged cloud-native architectures on AWS, gaining expertise in various AWS services. I contributed to the development of feature-rich web applications using React within our modern tech stack.
