@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Matt Downs // Full stack developer</title>
+        <title>Matt Downs // Full stack engineer</title>
       </Helmet>
       <div className="header py-4">
         <div className="container">
@@ -20,7 +20,7 @@ const Index = () => {
             <h1 className="col-12 display-3">// Matt Downs</h1>
             <div className="col-md-8">
               <p className="lead mb-0">
-                A full stack web developer with a passion for using modern
+                A full stack web engineer with a passion for using modern
                 technologies to yield fantastic end user experiences.
               </p>
               <div className="only-print">
@@ -66,7 +66,7 @@ const Index = () => {
           <div className="col-md-8 pt-4">
             <h2>About me</h2>
             <p>
-              I am a full stack web developer with a focus on creating the best
+              I am a full stack web engineer with a focus on creating the best
               solution possible for the end user. I have a keen interest in
               using modern web technologies to create web applications that
               deliver a rich and fluid experience. I am a fast learner who is
