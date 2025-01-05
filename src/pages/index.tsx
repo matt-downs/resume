@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import moment from "moment";
 import "../styles/index.scss";
 import Experience from "../components/Experience";
-import Projects from "../components/Projects";
 import Sidebar from "../components/Sidebar";
 import Education from "../components/Education";
 
@@ -80,8 +79,6 @@ const Index = () => {
             <Experience />
 
             <Education />
-
-            <Projects />
           </div>
 
           <div className="col-md-4 pt-4 left-divider">
