@@ -3,11 +3,7 @@ type: sidebar
 sort: 300
 title: Fluent in
 bullets:
-  - TypeScript
-  - JS (ES5 & ES6) & JSX
-  - Node
+  - TypeScript, JavaScript, Node.js
   - C#
-  - B@SE (Neto templating)
-  - CSS, SCSS & SASS
-  - HTML
+  - HTML, CSS, SCSS & SASS
 ---

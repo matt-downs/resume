@@ -3,10 +3,10 @@ type: sidebar
 sort: 500
 title: Tooling experience
 bullets:
-  - Git & SVN
-  - Bash
+  - Git & SVN source control
+  - Bash & alternatives such as zx
   - Cypress & Jest
   - Terraform
-  - JIRA & Confluence
-  - Buildkite & Jenkins
+  - Atlassian Jira & Confluence
+  - GitHub Actions, Jenkins + other code pipelines
 ---

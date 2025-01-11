@@ -20,8 +20,8 @@ const Index = () => {
             <h1 className="col-12 display-3">// Matt Downs</h1>
             <div className="col-md-8">
               <p className="lead mb-0">
-                A full stack web engineer with a passion for using modern
-                technologies to yield fantastic end user experiences.
+                A full-stack engineer with a passion for creating great software
+                solutions.
               </p>
               <div className="only-print">
                 <p className="small mt-3 mb-0">
@@ -66,14 +66,14 @@ const Index = () => {
           <div className="col-md-8 pt-4">
             <h2>About me</h2>
             <p>
-              I am a full stack web engineer with a focus on creating the best
-              solution possible for the end user. I have a keen interest in
-              using modern web technologies to create web applications that
-              deliver a rich and fluid experience. I am a fast learner who is
-              not afraid to jump straight into a project. I work well in a team,
-              and enjoy connecting with the people I work with. I crave a good
-              challenge, and I am always striving to expand my knowledge and
-              techniques for the future.
+              I am a results-oriented full-stack web engineer with a proven
+              ability to build high-quality, user-centered web applications. I
+              possess a strong work ethic, a fast learning curve, and a passion
+              for exploring and implementing the latest web technologies. I'm a
+              highly motivated individual who thrives in collaborative
+              environments and is always seeking new challenges to grow and
+              excel. I can effectively prioritize tasks and make sound decisions
+              under pressure.
             </p>
 
             <Experience />
